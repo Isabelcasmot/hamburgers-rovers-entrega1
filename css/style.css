@@ -117,7 +117,7 @@ header nav .menu li a {
     color: #aaa;
 }
 
-header nav .menu li:last-child a{
+header nav .menu li:last-child a {
     border-bottom: 0;
 }
 
@@ -161,21 +161,19 @@ footer a:hover {
 
 /* fin footer */
 
+/* inicio hero */
 
-/*Inicio Hero*/
-
-.hero{
+.hero {
     background-image: url(../images/fondo.jpg);
     height: 60vh;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     background-color: #aaa;
     background-blend-mode: multiply;
     display: flex;
-
 }
 
-.hero .container{
+.hero .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -183,13 +181,9 @@ footer a:hover {
     color: white;
 }
 
-
-.hero h1{
+.hero h1 {
     font-family: var(--fuenteSecundaria);
-    font-size: calc(var(--fontSize)*2.5); 
-    /* estos numeros me calculan con el font size ya añadido*/
-    width: 90%;
-
+    font-size: calc(var(--fontSize)*2.5);
 }
 
 .hero h2 {
@@ -199,12 +193,11 @@ footer a:hover {
     text-shadow: 1px 1px 3px black;
 }
 
-.hero p{
+.hero p {
     font-size: calc(var(--fontSize)*1.15);
 }
 
-
-.boton{
+.boton {
     display: inline-block;
     background-color: var(--colorPrincipal);
     color: white;
@@ -212,61 +205,57 @@ footer a:hover {
     padding: 1.10em;
     margin: var(--marginGrid) 0;
     border: 1px solid var(--colorPrincipal);
-    
 }
 
-.boton i{
+.boton i {
     font-size: 95%;
-
 }
-.boton:hover{
+
+.boton:hover {
     background-color: transparent;
     color: var(--colorPrincipal);
-    
 }
 
-.boton:hover i{
+.boton:hover i {
+
     transition: 0.5s;
     transform: translateX(5px);
 }
 
-.hero .social{
 
+.hero .social {
     display: flex;
     width: 160px;
     justify-content: space-between;
 }
 
-.hero .social a{
-
-color: white;
-text-decoration: none;
+.hero .social a {
+    color: white;
+    text-decoration: none;
 }
 
-/*fin del Hero*/
 
-/*Inicio Our services*/
 
-main section{
+/* fin hero */
 
+/* inicio Our Services */
+
+main section {
     padding: 2.5em 1em;
 }
 
-main section h2{
+main section h2 {
     color: black;
     font-family: var(--fuenteSecundaria);
     font-size: 2em;
     text-align: center;
-
 }
 
-main section h2 span{
-    color: var(--colorPrincipal);
+main section h2 span {
+    color: var(--colorPrincipal)
 }
 
-/*esto de abajo hace el cambio de eje*/
-
-main section .underline{
+main section .underline {
     position: relative;
     width: 100px;
     margin: 0 auto;
@@ -275,164 +264,138 @@ main section .underline{
     margin-bottom: 1em;
 }
 
-main section .underline hr{
+
+main section .underline hr {
     width: 100%;
     border-color: var(--colorPrincipal);
 }
 
-main section .underline span{
+main section .underline span {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
-/*sistema flexible*/
 main #ourservices .flex {
     display: flex;
     flex-wrap: wrap;
-
 }
 
-main #ourservices .flex article{
+main #ourservices .flex article {
     width: 100%;
     padding: 2em 0;
     border-bottom: 1px solid #aaa;
-
 }
 
 main #ourservices .flex article h3 {
-  font-weight: 700;
-  font-size: 110%;
-  margin: 0.5em 0em;
-
-}
-
-main #ourservices .flex article p{
-color: #777;
-line-height: 1.10em;
-margin-bottom: 0.5em;
-
-}
-
-.enlace{
-    color: var(--colorPrincipal);
-    text-decoration: none;
     font-weight: 700;
-
+    font-size: 110%;
+    margin: 0.5em 0em;
 }
 
-.enlace i{
-
-    font-size: 95%;
-    
+main #ourservices .flex article p {
+    color: #777;
+    line-height: 1.10em;
+    margin-bottom: 0.5em;
 }
 
-main #ourservices article div i{
-
+.enlace {
+    text-decoration: none;
     color: var(--colorPrincipal);
+    font-weight: 700;
+}
+
+.enlace i {
+    font-size: 95%;
+}
+
+main #ourservices article div i {
     border: 1px solid var(--colorPrincipal);
+    color: var(--colorPrincipal);
     padding: 0.5em;
 }
 
-
-.fa-truck{
+.fa-truck {
     transform: rotateY(180deg);
 }
-/*fin our services*/
 
+/* final Our Services */
 
-/*inicio about us*/
+/* inicio about us */
 
-main section h3{
-
+main section h3 {
     font-weight: 700;
     font-size: 110%;
-
 }
 
-main section h4{
+main section h4 {
     color: var(--colorPrincipal);
     margin: var(--marginGrid) 0;
 }
 
-main section p{
+main section p {
     color: #777;
     line-height: 1.10em;
-
 }
 
-main #aboutus{
-    margin-bottom: 40px;
-}
 
-main #aboutus figure{
-
+main #aboutus figure {
     width: 90%;
     margin: 0 auto;
-
 }
 
-main #aboutus figure .marco{
-
+main #aboutus figure .marco {
     border: 3px solid var(--colorPrincipal);
     transform: rotateZ(10deg);
     transition: 1s;
 }
 
-main #aboutus figure .marco img{
-
+main #aboutus figure .marco img {
     transform: rotateZ(-10deg);
     transition: 1s;
 }
 
-main #aboutus figure:hover :is(.marco, img){
-
+main #aboutus figure:hover :is(.marco, img) {
     transform: rotateZ(0deg);
 }
 
 
+main #aboutus {
+    margin-bottom: 40px;
+}
 
-
-
-
+/* final about us */
 
 /* media queries 600px */
 
-@media(min-width: 37.5em){
+@media(min-width: 37.5em) {
 
-main #ourservices .flex article{
-    width: calc(50% - var(--marginGrid)*2) ;
-    padding: 0em var(--marginGrid);
-    border-bottom: 0px;
-    margin: var(--marginGrid);
-    border-left: 1px solid #aaa;
+    main #ourservices .flex article {
+        width: calc(50% - var(--marginGrid)*2);
+        padding: 0em var(--marginGrid);
+        border-bottom: 0px;
+        margin: var(--marginGrid);
+        border-left: 1px solid #aaa;
+    }
 
-}
-main #ourservices .flex article:last-child{
+    main #ourservices .flex article:last-child {
+        width: 100%;
+    }
 
-    width: 100%;
-}
+    main #aboutus .flex {
+        display: flex;
+    }
 
-main #aboutus .flex{
-
-    display: flex;
-}
-main #aboutus .columna{
-
-    padding: 1em;
-}
-
-
-
+    main #aboutus .columna {
+        padding: 1em;
+    }
 
 
 }
 
 
 /* media queries 768px */
-
 @media(min-width: 48em) {
 
     header .nav-top a span {
@@ -476,16 +439,13 @@ main #aboutus .columna{
         border: 0;
     }
 
-
-    main #ourservices .flex article{
-        width: calc(33.333% - var(--marginGrid)*2) ;
-       
-
+    main #ourservices .flex article {
+        width: calc(33.333% - var(--marginGrid)*2);
     }
-    main #ourservices .flex article:last-child{
 
-        width: calc(33.333% - var(--marginGrid)*2) ;
-}
+    main #ourservices .flex article:last-child {
+        width: calc(33.333% - var(--marginGrid)*2);
+    }
 
 
 
